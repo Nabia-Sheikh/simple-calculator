@@ -56,8 +56,8 @@ body {
 .calculator__display {
     background-color: #222222;
     color: #fff;
-    font-size: 1.714285714em;
-    padding: 0.5em 0.75em;
+    font-size: 1.5em;
+    padding: 0.5em 0.3em;
     text-align: right;
 }
 
@@ -67,12 +67,16 @@ body {
     grid-gap: 1px;
     grid-template-columns: repeat(4, 1fr);
 }
+.calculator__keys :hover{
+    color: red;
+}
 
 .calculator__keys>* {
     background-color: #fff;
     padding: 0.5em 1.25em;
     position: relative;
     text-align: center;
+    cursor: pointer;
 }
 
 .key--operator {
@@ -82,5 +86,6 @@ body {
 .key--equal {
     background-image: linear-gradient(to bottom, #aaa6a5, #c9bbb6);
     grid-column: -2;
-    grid-row: 3 / span 4;
+    grid-row: 4 / span 4;
+    font-size: larger;
 }
